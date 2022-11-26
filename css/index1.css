@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  h4,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+  body {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    height: 13rem;
+  }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+  /*  */
+  .box{
+    min-width: 1024px;
+  max-width: 1920px;
+  min-height: 10rem;
+  margin: 0 auto;
+  padding: 0.875rem 0.25rem 0;
+  background: url(../images/logo.png) no-repeat;
+  background-size: contain;
+  display: flex;
+  }
+  /* 左边部分 */
+  .box-left{
+    flex: 3;
+    /* background-color: aqua; */
+    margin-top: .2rem;
+  }
+
+  /* 左上 */
+  .inner>ul{
+   font-size: .2rem;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-around;
+  }
+  .survey {
+    width: 98%;
+    height: 1.2rem;
+    border: 1px solid transparent;
+    border-image-source: url(../images/border.png);
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    position: relative;
+  }
+  .inner{
+    position: absolute;
+    top: -0.6375rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    left: -1.65rem;
+    padding: 0.225rem 0.325rem;
+  }
+  .inner>ul>li{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  .inner>ul>li>h4{
+    font-size: 0.3rem;
+    color: white;
+    margin: 0 0 0.06rem 0;
+  }
+  .left-1>li>span{
+    font-size: 0.15rem;
+  color: #4c9bfd;
+  }
+  /* 点 */
+  .line {
+    display: inline-block;
+    width: 0.05rem;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 0.025rem;
+  }
+  /*  故障 设备图 */
+  .drawing{
+    width: 98%;
+    height: 5.2rem;
+    border: 1px solid transparent;
+    border-image-source: url(../images/border.png);
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    position: relative;
+  }
+  .equipment{
+    position: absolute;
+    top: -0.6375rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    left: -1.65rem;
+    padding: 0.225rem 0.325rem;
+  }
+  .malfunction{
+    width: 100%;
+    height: .4rem;
+    /* background-color: blue; */
+    display: flex;
+    font-size: 0.25rem;
+    color:  #4c9bfd;
+  }
+  .malfunction>li:nth-of-type(2){
+    margin-left: .3rem;
+    color: #6FEEEF;
+    font-weight: 600;
+ }
+  .malfunction>li:nth-of-type(3){
+     margin-left: .2rem;
+     color:  #4c9bfd;
+  }
+  #li1{
+    color: white;
+  }
+  .scroll{
+    width: 100%;
+    height: 4rem;
+   overflow: hidden;
+
+  }
+  .top{
+    width: 100%;
+    height: .4rem;
+    background-color: #1A3158;
+    font-size: 0.17rem;
+    margin-top: .1rem;
+    display: flex;
+    color: #5CD8E3;
+    line-height: .4rem;
+  }
+  .top>li:nth-of-type(2){
+    margin-left: 0.4rem;
+  }
+  .top>li:nth-of-type(3){
+    margin-left: 1.6rem;
+  }
+  .scroll-l1{
+    width: 100%;
+    height: 3.7rem;
+    /* background-color: #5CD8E3; */
+    overflow: hidden;
+  }
+  .scroll-l{
+    animation: move 4s linear infinite;
+  }
+  .scroll-l>li{
+    display: flex;
+    font-size: 0.1rem;
+   color: #5698EA;
+   line-height: .4rem;
+  }
+  .scroll-l>li>span:nth-of-type(2){
+    margin-left: .4rem;
+  }
+  .scroll-l>li>span:nth-of-type(3){
+    margin-left: 0.42rem;
+  }
+  @keyframes move {
+    0% {}
+
+    100% {
+        transform: translateY(-30%);
+    }
+}
+.scroll:nth-of-type(2){
+  display: none;
+}
+/* 点位分布图 */
+.pt{
+  width: 98%;
+  height: 4rem;
+  border: 1px solid transparent;
+  border-image-source: url(../images/border.png);
+  border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+  border-image-slice: 51 38 20 132;
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+.ptt{
+  position: absolute;
+  top: -0.6375rem;
+  right: -0.475rem;
+  bottom: -0.25rem;
+  left: -1.65rem;
+  padding: 0.225rem 0.325rem;
+}
+.ptt>h3{
+  color: white;
+  font-size: .3rem;
+}
+.province{
+  width: 100%;
+  height: 2.5rem;
+  /* background-color: #5CD8E3; */
+  margin-top: .5rem;
+  display: flex;
+}
+.bin{
+  flex: 3;
+}
+.zong{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.1rem;
+  padding: 0.45rem 0.3rem;
+  box-sizing: border-box;
+  background-image: url(../images/rect.png);
+  background-size: cover;
+}
+.zong>h4{
+  font-size: 0.25rem;
+  color: #fff;
+}
+.zong>span{
+  display: block;
+  color: #f8ab05;
+  font-size: 0.175rem;
+}
+  /* 中间部分 */
+  .box-center{
+    flex: 4;
+    /* background-color: blue; */
+    margin-top: 1rem;
+    margin-left: .3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .map{
+    flex: 3.5;
+    background-image: url(../images/rect.png);
+    margin-top: .2rem;
+  }
+  .zhu{
+    flex: 2;
+    border: 1px solid transparent;
+    border-image-source: url(../images/border.png);
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    position: relative;
+    margin-top: .2rem;
+  }
+  .box-center>h3{
+    font-size: 0.2rem;
+    color: #fff;
+  }
+  .histogram{
+    position: absolute;
+    top: -0.6375rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    left: -1.65rem;
+    padding: 0.225rem 0.325rem;
+    display: flex;
+   
+  }
+  /* .statistics{
+    background-color: #5698EA;
+    flex: 3;
+  } */
+  .province1{
+    width: 100%;
+  height: 2.5rem;
+  /* background-color: #5CD8E3; */
+  margin-top: 1rem;
+  display: flex;
+    /* background-color: #6FEEEF; */
+    
+  }
+  .histogram>h3{
+    font-size: 0.25rem;
+    color: #fff;
+  }
+  .statistics{
+    flex: 4;
+  }
+  /* 右边部分 */
+  .box-right{
+    flex: 3;
+    /* background-color: blueviolet; */
+    margin-top: .2rem;
+    margin-left: .3rem;
+    display: flex;
+    flex-direction: column;
+  }
+ .year{
+  flex: 2;
+ }
+ 
+  /* 订单 */
+.panel{
+  height: 5rem;
+}
+.order .filter {
+  display: flex;
+
+}
+.order .filter a {
+  display: block;
+  height: 0.225rem;
+  line-height: 1;
+  padding: 0 0.225rem;
+  color: #1950c4;
+  font-size: 0.2rem;
+  border-right: 0.025rem solid #00f2f1;
+}
+.order .filter a:first-child {
+  padding-left: 0;
+}
+.order .filter a:last-child {
+  border-right: none;
+}
+.order .filter a.active {
+  color: #fff;
+  font-size: 0.225rem;
+}
+.order .data {
+  display: flex;
+  margin-top: 0.25rem;
+}
+
+.orderDataHidden {
+  display: none !important;
+}
+.order .item {
+  width: 50%;
+}
+.order h4 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 0.125rem;
+}
+.order span {
+  display: block;
+  color: #4c9bfd;
+  font-size: 0.175rem;
+}
+  /* 销售额统计 */
+  .market{
+    flex: 3.7;
+    border: 1px solid transparent;
+    border-image-source: url(../images/border.png);
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    position: relative;
+    margin-top: .3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .sline{
+    position: absolute;
+    top: -0.6375rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    left: -1.65rem;
+    padding: 0.225rem 0.325rem;
+    display: flex; 
+
+   
+  }
+  /* 渠道 分布 */
+  .channe{
+    flex: 3.7;
+    margin-top: .3rem;
+    display: flex;
+  }
+  .channe1{
+flex: 1;
+    border: 1px solid transparent;
+    border-image-source: url(../images/border.png);
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    position: relative;
+    margin-top: .3rem;
+  }
+  .lei{
+    position: absolute;
+    top: -0.6375rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    left: -1.65rem;
+    padding: 0.225rem 0.325rem;
+    display: flex; 
+  }
+  /*  */
+  .channe2{
+    
+    border: 1px solid transparent;
+    border-image-source: url(../images/border.png);
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    position: relative;
+    margin-top: .3rem;
+    margin-left: .2rem;
+   
+  }
+  .xiao{
+    position: absolute;
+    top: -0.6375rem;
+    right: -0.475rem;
+    bottom: -0.25rem;
+    left: -1.65rem;
+    padding: 0.225rem 0.325rem;
+    display: flex; 
+    flex-direction: column;
+ 
+    
+  }
+.channe1>h3{
+  font-size: .2rem;
+  color: #fff;
+  position: absolute;
+
+}
+  /* 完成 进度统计 */
+  .complete{
+    flex: 2.7;
+    margin-top: .3rem;
+    border: 1px solid transparent;
+    border-image-source: url(../images/border.png);
+    border-width: 0.6375rem 0.475rem 0.25rem 1.65rem;
+    border-image-slice: 51 38 20 132;
+    margin-bottom: 0.25rem;
+    position: relative;
+    margin-top: .3rem;
+    margin-left: .2rem;
+    display: flex;
+
+  }
+ 
+  
+  .plan {
+    height: 1.7rem;
+  }
+  
+  
+  
